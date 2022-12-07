@@ -31,7 +31,7 @@ const Welcome = (props: Props) => {
         Try our apps
       </h1>
       <hr className='border-dashed border-t-cyan-500'/>
-      <div className='grid max-sm:grid-cols-2 max-md:grid-cols-3 md:grid-flow-col items-start justify-evenly'>
+      <div className='grid max-sm:grid-cols-2 max-md:grid-cols-3 md:grid-flow-col md:overflow-y-scroll items-start justify-evenly'>
         {/* item */}
         <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
           <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
@@ -39,18 +39,49 @@ const Welcome = (props: Props) => {
           <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
           <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
         </div>
+
         <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
           <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
           <img src={scifi2} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
           <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
           <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
         </div>
+        
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem sit.</h4>
+          <img src={scifi3} alt="demo-img" className='min-w-[175px] border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem  dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+        
         <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
           <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
-          <img src={scifi3} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <img src={scifi4} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
           <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
           <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
         </div>
+       
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
+          <img src={scifi1} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
+          <img src={scifi2} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+        
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem sit.</h4>
+          <img src={scifi3} alt="demo-img" className='min-w-[175px] border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem  dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+        
         <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
           <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
           <img src={scifi4} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
@@ -58,6 +89,33 @@ const Welcome = (props: Props) => {
           <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
         </div>
 
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
+          <img src={scifi1} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
+          <img src={scifi2} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+        
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem sit.</h4>
+          <img src={scifi3} alt="demo-img" className='min-w-[175px] border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem  dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
+        
+        <div className='flex flex-col items-center justify-center gap-3 max-w-min p-3'>
+          <h4 className='min-w-max font-semibold text-left text-base text-cyan-500'>Lorem ipsum dolor sit.</h4>
+          <img src={scifi4} alt="demo-img" className='border-none rounded-lg shadow-cyan-300 shadow-sm object-cover'/>
+          <p className='text-left text-sm font-light text-gray-300'>Lorem ipsum dolor sit amet consectetur...</p>
+          <button type='button' className='max-w-max px-5 text-slate-300 shadow-violet-200 shadow-sm bg-transparent rounded-md active:shadow-green-600 active:scale-[.98] active:shadow-sm transition-all'>Try</button>
+        </div>
       </div>
     </section>
 
